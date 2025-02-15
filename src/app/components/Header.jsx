@@ -1,3 +1,4 @@
+import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import React from "react";
 
@@ -19,6 +20,9 @@ const Header = () => {
           <Link href="sign-up" className="text-gray-300 hover:text-white mr-4">
             Sign Up
           </Link>
+          <div className="inline-block">
+            <UserButton />
+          </div>
         </div>
       </nav>
     </>
